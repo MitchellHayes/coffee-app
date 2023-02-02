@@ -1,27 +1,39 @@
-# CoffeeApp
+# Coffee Brew Tracker App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+A simple Angular web application for tracking coffee brewing history. Keep track of your favorite brew style, roast date, coffee weight, brand, and blend.
 
-## Development server
+## Live App
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+You can access the live version of the app at [https://coffee-app-xv26q.ondigitalocean.app/](https://coffee-app-xv26q.ondigitalocean.app/)
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To run this app locally, you need to have Angular CLI installed. You can install it by running the following command:
 
-## Build
+```bash
+npm install -g @angular/cli
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Clone this repository to your local machine and navigate to the project folder:
 
-## Running unit tests
+```bash
+git clone https://github.com/[YOUR_GITHUB_USERNAME]/coffee-brew-tracker.git
+cd coffee-brew-tracker
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Install the dependencies by running the following command:
 
-## Running end-to-end tests
+```bash
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Start the development server by running the following command:
 
-## Further help
+```bash
+ng serve
+```
+The app should be up and running on http://localhost:4200/.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
