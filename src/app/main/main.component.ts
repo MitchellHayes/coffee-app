@@ -9,17 +9,10 @@ export class MainComponent {
   username: string;
   brewStyle: string;
   date: string;
+
   // other methods
-f: any;
+
   onSubmit(formData) {
     console.log(formData);
   }
 }
-export class MainComponent {
-  username: string;
-  coffeeType: string;
-  date: string;
-
-  // other methods
-}
-
