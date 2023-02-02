@@ -1,12 +1,8 @@
 <h1>Coffee Tracking App</h1>
-<form>
-  <div>
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" #username="ngModel">
-</div>
+<form (ngSubmit)="onSubmit(formData.value)">
   <div>
     <label for="brewStyle">Brew Style:</label>
-    <select id="brewStyle" name="brewStyle" #brewStyle="ngModel">
+    <select id="brewStyle" name="brewStyle" [(ngModel)]="brewStyle">
       <option value="aeropress">AeroPress</option>
       <option value="chemex">Chemex</option>
       <option value="espresso">Espresso</option>
@@ -14,6 +10,7 @@
   </div>
   <div>
     <label for="date">Date:</label>
-    <input type="date" id="date" name="date" #date="ngModel">
+    <input type="date" id="date" name="date" [(ngModel)]="date">
   </div>
+  <button type="submit">Submit</button>
 </form>
