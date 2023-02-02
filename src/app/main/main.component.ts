@@ -1,18 +1,20 @@
 import { Component } from '@angular/core';
 
+interface formData {
+  brewStyle: string;
+  date: string;
+}
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
-  username: string;
-  brewStyle: string;
-  date: string;
+  brewStyle: string = '';
+  date: string = '';
 
-  // other methods
-
-  onSubmit(formData) {
+  onSubmit(formData: formData) {
     console.log(formData);
   }
 }
