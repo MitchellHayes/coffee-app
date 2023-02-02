@@ -14,7 +14,7 @@ export class MainComponent {
   brewStyle: string = '';
   date: string = '';
 
-  onSubmit(formData) {
+  onSubmit(formData: formData) {
     console.log(formData);
   }
 }
