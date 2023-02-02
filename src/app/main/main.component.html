@@ -1,16 +1,31 @@
-<h1>Coffee Tracking App</h1>
-<form>
-  <div>
-    <label for="brewStyle">Brew Style:</label>
-    <select id="brewStyle" name="brewStyle">
-      <option value="aeropress">AeroPress</option>
-      <option value="chemex">Chemex</option>
-      <option value="espresso">Espresso</option>
-    </select>
+<div class="coffee-header">
+  <h3>Brew Tacker</h3>
   </div>
-  <div>
-    <label for="date">Date:</label>
-    <input type="date" id="date" name="date">
-  </div>
-  <button type="submit">Submit</button>
-</form>
+  <form>
+    <div class="coffee-card">
+      <label for="coffeeBrand">Coffee Brand:</label>
+      <input type="text" id="coffeeBrand" name="coffeeBrand">
+      <br>
+      <label for="blend">Blend:</label>
+      <input type="text" id="blend" name="blend">
+      <br>
+      <label for="roastDate">Roast Date:</label>
+      <input type="date" id="roastDate" name="roastDate">
+      <br>
+      <label for="brewtDate">Brew Date:</label>
+      <input type="date" id="brewDate" name="brewDate">
+      <br>
+      <label for="brewStyle">Brew Style:</label>
+      <select id="brewStyle" name="brewStyle">
+        <option value="aeropress">AeroPress</option>
+        <option value="chemex">Chemex</option>
+        <option value="espresso">Espresso</option>
+      </select>
+      <br>
+      <label for="coffeeWeight">Coffee Weight (g):</label>
+      <input type="text" id="coffeeWeight" name="coffeeWeight">
+      <br>
+    </div>
+    <button class="coffee-btn" type="submit">Submit</button>
+  </form>
+  
