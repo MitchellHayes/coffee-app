@@ -1,0 +1,54 @@
+$coffee-brown: #6B3E26;
+$off-white: #F5F5F5;
+
+.coffee-header {
+  background-color: $coffee-brown;
+  color: $off-white;
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.coffee-card {
+  background-color: $off-white;
+  border: 2px solid $coffee-brown;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 400px;
+
+  label {
+    margin: 5px;
+  }
+
+  input {
+    margin: 5px;
+  }
+
+  select {
+    margin: 5px;
+  }
+
+  h2 {
+    color: $coffee-brown;
+    margin: 0;
+  }
+  
+}
+
+.coffee-btn {
+  background-color: $coffee-brown;
+  border: none;
+  border-radius: 5px;
+  color: $off-white;
+  cursor: pointer;
+  padding: 10px 20px;
+
+  &:hover {
+    background-color: darken($coffee-brown, 10%);
+  }
+}
