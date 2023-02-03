@@ -1,31 +1,45 @@
 <div class="coffee-header">
   <h3>Brew Tracker</h3>
+</div>
+<form>
+  <div class="coffee-card">
+    <label for="coffeeBrand">Coffee Brand:</label>
+    <input type="text" id="coffeeBrand" name="coffeeBrand" />
+    <br />
+    <label for="blend">Blend:</label>
+    <input type="text" id="blend" name="blend" />
+    <br />
+    <label for="roastDate">Roast Date:</label>
+    <input type="date" id="roastDate" name="roastDate" />
+    <br />
+    <label for="brewtDate">Brew Date:</label>
+    <input type="date" id="brewDate" name="brewDate" />
+    <br />
+    <label for="brewStyle">Brew Style:</label>
+    <select id="brewStyle" name="brewStyle">
+      <option value="aeropress">AeroPress</option>
+      <option value="chemex">Chemex</option>
+      <option value="espresso">Espresso</option>
+    </select>
+    <br />
+    <label for="coffeeWeight">Coffee Weight (g):</label>
+    <input type="text" id="coffeeWeight" name="coffeeWeight" />
+    <br />
+    <label for="bloomWater">Bloom Water (g):</label>
+    <input type="text" id="bloomWater" name="bloomWater" />
+    <br />
+    <label for="bloomTime">Bloom Time (seconds):</label>
+    <input type="" id="bloomTime" name="bloomTime" />
+    <br />
+    <label for="brewWater">Brew Water (g):</label>
+    <input type="text" id="brewWater" name="brewWater" />
+    <br />
+    <label for="brewTime">Brew Time (seconds):</label>
+    <input type="text" id="brewTime" name="brewTime" />
+    <br />
+    <label for="totalOutput">Total Output (g):</label>
+    <input type="text" id="totalOutput" name="totalOutput" />
+    <br />
   </div>
-  <form>
-    <div class="coffee-card">
-      <label for="coffeeBrand">Coffee Brand:</label>
-      <input type="text" id="coffeeBrand" name="coffeeBrand">
-      <br>
-      <label for="blend">Blend:</label>
-      <input type="text" id="blend" name="blend">
-      <br>
-      <label for="roastDate">Roast Date:</label>
-      <input type="date" id="roastDate" name="roastDate">
-      <br>
-      <label for="brewtDate">Brew Date:</label>
-      <input type="date" id="brewDate" name="brewDate">
-      <br>
-      <label for="brewStyle">Brew Style:</label>
-      <select id="brewStyle" name="brewStyle">
-        <option value="aeropress">AeroPress</option>
-        <option value="chemex">Chemex</option>
-        <option value="espresso">Espresso</option>
-      </select>
-      <br>
-      <label for="coffeeWeight">Coffee Weight (g):</label>
-      <input type="text" id="coffeeWeight" name="coffeeWeight">
-      <br>
-    </div>
-    <button class="coffee-btn" type="submit">Submit</button>
-  </form>
-  
+  <button class="coffee-btn" type="submit">Submit</button>
+</form>
