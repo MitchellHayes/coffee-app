@@ -1,10 +1,20 @@
 <div class="coffee-header">
   <h3>Brew Tracker</h3>
 </div>
-<form>
+<form
+  method="POST"
+  action="https://script.google.com/macros/s/AKfycbw_b-gnzDL4kOU2D9iDPZ69XrzgfalJuemonQRmPaIZN7j65K4pN2RjDfEuV1hzlFKY5w/exec"
+>
   <div class="coffee-card">
-    <label for="coffeeBrand">Coffee Brand:</label>
-    <input type="text" id="coffeeBrand" name="coffeeBrand" />
+    <label for="sheetName">Sheet Name:</label>
+    <select name="sheetName">
+      <option value="Adam">Adam</option>
+      <option value="Ben">Ben</option>
+      <option value="Mitchell">Mitchell</option>
+      <option value="Zach">Zach</option>
+    </select>    
+    <label for="brand">Coffee Brand:</label>
+    <input type="text" id="brand" name="brand" />
     <br />
     <label for="blend">Blend:</label>
     <input type="text" id="blend" name="blend" />
@@ -22,8 +32,8 @@
       <option value="espresso">Espresso</option>
     </select>
     <br />
-    <label for="coffeeWeight">Coffee Weight (g):</label>
-    <input type="text" id="coffeeWeight" name="coffeeWeight" />
+    <label for="coffeeDose">Coffee Weight (g):</label>
+    <input type="text" id="coffeeDose" name="coffeeDose" />
     <br />
     <label for="bloomWater">Bloom Water (g):</label>
     <input type="text" id="bloomWater" name="bloomWater" />
