@@ -4,7 +4,7 @@ A simple Angular web application for tracking coffee brewing history. Keep track
 
 ## Live App
 
-You can access the live version of the app at [https://coffee-app-xv26q.ondigitalocean.app/](https://coffee-app-xv26q.ondigitalocean.app/)
+You can access the live version of the app at [https://mitchellhayes.github.io/coffee-app/](https://mitchellhayes.github.io/coffee-app/)
 
 ## Getting Started
 
@@ -33,6 +33,13 @@ Start the development server by running the following command:
 ng serve
 ```
 The app should be up and running on http://localhost:4200/.
+
+Run the follow command before commiting to main:
+
+```bash
+ng build --configuration production
+```
+This builds the app for github pages.
 
 ## License
 
