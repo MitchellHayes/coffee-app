@@ -24,7 +24,7 @@ cd coffee-brew-tracker
 Install the dependencies by running the following command:
 
 ```bash
-npm install
+npm ci
 ```
 
 Start the development server by running the following command:
@@ -33,13 +33,6 @@ Start the development server by running the following command:
 ng serve
 ```
 The app should be up and running on http://localhost:4200/.
-
-Run the follow command before commiting to main:
-
-```bash
-ng build --configuration production
-```
-This builds the app for github pages.
 
 ## License
 
