@@ -1,32 +1,20 @@
-import { Component } from "@angular/core";
-import { Form } from "@angular/forms";
+import { Component } from '@angular/core';
 
-type BrewData = {
-  brand: string;
-  blend: string;
-  roastDate: Date;
-  brewDate: Date;
+interface formData {
   brewStyle: string;
-  coffeeDose: number;
-  bloomWater: number;
-  bloomTime: number;
-  brewWater: number;
-  brewTime: number;
-  totalOutput: number;
-  notes: string;
-  sheetName: string;
-};
+  date: string;
+}
 
 @Component({
-  selector: "app-main",
-  templateUrl: "./main.component.html",
-  styleUrls: ["./main.component.scss"],
+  selector: 'app-main',
+  templateUrl: './main.component.html',
+  styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
-  brewData: Partial<BrewData> = {};
+  brewStyle: string = '';
+  date: string = '';
 
-  doSubmit(event: MouseEvent, formData: HTMLFormElement) {
-    // event.preventDefault();
+  onSubmit(formData: formData) {
     console.log(formData);
   }
 }

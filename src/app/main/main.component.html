@@ -1,5 +1,7 @@
-<h2>Brew Tracker</h2>
-<form #brewForm
+<div class="coffee-header">
+  <h3>Brew Tracker</h3>
+</div>
+<form
   method="POST"
   action="https://script.google.com/macros/s/AKfycbw_b-gnzDL4kOU2D9iDPZ69XrzgfalJuemonQRmPaIZN7j65K4pN2RjDfEuV1hzlFKY5w/exec"
 >
@@ -20,33 +22,37 @@
     <label for="roastDate">Roast Date:</label>
     <input type="date" id="roastDate" name="roastDate" />
     <br />
-    <label for="brewDate">Brew Date:</label>
+    <label for="brewtDate">Brew Date:</label>
     <input type="date" id="brewDate" name="brewDate" />
     <br />
     <label for="brewStyle">Brew Style:</label>
-    <brew-type-picker inputName="brewStyle"></brew-type-picker>
+    <select id="brewStyle" name="brewStyle">
+      <option value="aeropress">AeroPress</option>
+      <option value="chemex">Chemex</option>
+      <option value="espresso">Espresso</option>
+    </select>
     <br />
     <label for="coffeeDose">Coffee Weight (g):</label>
-    <input type="number" min="0" step="0.1" id="coffeeDose" name="coffeeDose" />
+    <input type="text" id="coffeeDose" name="coffeeDose" />
     <br />
     <label for="bloomWater">Bloom Water (g):</label>
-    <input type="number" min="0" step="0.1" id="bloomWater" name="bloomWater" />
+    <input type="text" id="bloomWater" name="bloomWater" />
     <br />
     <label for="bloomTime">Bloom Time (seconds):</label>
-    <input type="number" min="0" id="bloomTime" name="bloomTime" />
+    <input type="" id="bloomTime" name="bloomTime" />
     <br />
     <label for="brewWater">Brew Water (g):</label>
-    <input type="number" min="0" step="0.1"  id="brewWater" name="brewWater" />
+    <input type="text" id="brewWater" name="brewWater" />
     <br />
     <label for="brewTime">Brew Time (seconds):</label>
-    <input type="number" min="0" id="brewTime" name="brewTime" />
+    <input type="text" id="brewTime" name="brewTime" />
     <br />
     <label for="totalOutput">Total Output (g):</label>
-    <input type="number" min="0" step="0.1"  id="totalOutput" name="totalOutput" />
+    <input type="text" id="totalOutput" name="totalOutput" />
     <br />
     <label for="notes">Notes:</label>
-    <textarea id="notes" name="notes"></textarea>
+    <input type="text" id="notes" name="notes" />
     <br />
   </div>
-  <button class="coffee-btn" type="submit" (click)="doSubmit($event, brewForm)">Submit</button>
+  <button class="coffee-btn" type="submit">Submit</button>
 </form>
