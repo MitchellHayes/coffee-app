@@ -1,0 +1,8 @@
+<div class="brew-type-picker">
+  <ng-container *ngFor="let type of type2icon | keyvalue">
+    <input type="radio" [value]="type.key" [id]="type.key" [name]="inputName" />
+    <label [title]="type.key" [for]="type.key"
+      ><img [src]="'assets/' + type.value"
+    /></label>
+  </ng-container>
+</div>
